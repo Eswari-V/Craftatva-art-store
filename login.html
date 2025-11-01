@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Coupen Code -->
+  <div class="cou">
+    <div class="coupen">
+      <p>Worldwide Shipping.<span class="span-coupen">Taxes & Shipping Included.</span></p>
+      <p>Use Coupon: HAPPY5 for flat 5% Off.</p>
+    </div>
+  </div>
+  <!-- Navbar Start -->
+  <div class="navbar">
+    <a href="./index.html"><img class="logo" src="./image/logo-image.avif"></a>
+    <ul>
+      <li>ARTWORKS</li>
+      <li>OUR ARTISTS</li>
+      <li>COLLECTIONS</li>
+      <li><input type="text" placeholder="Search for Artist,Category,topic..."></li>
+      <div class="icons">
+        <li><svg aria-hidden="true" fill="none" focusable="false" width="24" class="svg-user" viewBox="0 0 24 24">
+            <path
+              d="M16.125 8.75c-.184 2.478-2.063 4.5-4.125 4.5s-3.944-2.021-4.125-4.5c-.187-2.578 1.64-4.5 4.125-4.5 2.484 0 4.313 1.969 4.125 4.5Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+            <path d="M3.017 20.747C3.783 16.5 7.922 14.25 12 14.25s8.217 2.25 8.984 6.497" stroke="currentColor"
+              stroke-width="1.5" stroke-miterlimit="10"></path>
+          </svg></li>
+        <li><svg class="svg-heart" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.5429 4C13.4999 4 12 6.99984 12 6.99984C12 6.99984 10.5001 4 7.45712 4C4.98412 4 3.02579 6.06895 3.00048 8.53772C2.94892 13.6623 7.06573 17.3066 11.5782 20.3693C11.7026 20.4539 11.8495 20.4992 12 20.4992C12.1505 20.4992 12.2975 20.4539 12.4219 20.3693C16.9338 17.3066 21.0506 13.6623 20.9995 8.53772C20.9742 6.06895 19.0159 4 16.5429 4Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+          </svg></li>
+        <li><svg class="svg-cart" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.914 11.1088C15.8187 9.84444 15.796 8.46587 15.6347 7.06251C15.3753 4.81446 14.2386 3.28271 12.0009 3.28271C9.76329 3.28271 8.62655 4.81446 8.36712 7.06162C8.20581 8.46587 8.18317 9.84356 8.08789 11.1079"
+              stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="bevel">
+            </path>
+            <path d="M20.1004 19.9089V9.10889H3.90039V19.9089H20.1004Z" stroke="currentColor" stroke-width="1.35"
+              stroke-miterlimit="10"></path>
+          </svg></li>
+      </div>
+
+    </ul>
+  </div>
+  <!-- Login page -->
+  <div class="login2">
+    <div class="bimg">
+      <img src="./image/image-l1.jpg">
+    </div>
+  </div>
+
+  <div class="box">
+    <h1>Login</h1>
+    <div class="input-box1">
+      <input type="email" placeholder="Email" id="email" required>
+      <i><svg class="Phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+          <path
+            d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+        </svg>
+      </i>
+    </div>
+    <div class="input-box1">
+      <input type="password" placeholder="Password" id="pass" required>
+      <i class='bx bxs-lock-alt'></i>
+    </div>
+    <div class="remember-forgot1">
+      <label><input type="checkbox">Remember Me</label>
+      <a href="#">Forgot Password</a>
+    </div>
+    <button type="submit" class="btn1" type="submit" onclick="login()">Login</button>
+    <div class="re-link">
+      <p>New Customer? <a href="signup.html">Register</a></p>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="./script.js"></script>
+
+</html>
